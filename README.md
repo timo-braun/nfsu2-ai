@@ -1,16 +1,17 @@
 # nfsu2-ai
 
-0. Description
+Description
 The goal of this project is to let a program drive cars and win races in the racing game Need for Speed: Underground 2. In order to achieve this task, we will use reinforcment learning in combination with neural network(s). This project is inspired by the work of the DeepMind team using the raw pixels to train a deep neural network to play Atari games (http://arxiv.org/pdf/1312.5602v1.pdf). In addition, at least the steering and the retrieval of the pixels will be done in a similar fashion as it was done by the YouTuber sentdex (https://www.youtube.com/user/sentdex) (https://pythonprogramming.net/next-steps-python-plays-gta-v/).
 
 This document is meant to be some where between a documentation and a written journal that informs on the thought processes behind certain decisions.
 
 Table of Contents:
 
-0. Description
-1. Introduction
-2. Installation / Usage
-3. Credits
+Description
+Introduction
+Installation / Usage
+Credits
+
 
 1. Introduction
 Need For Speed Underground 2 is a racing game, made by EA and published in 2004 in which the player mainly competes in races against other racers. To win a race and receive the prize money, the protagonist has to become first in each race. In the career mode on which we will focus, a player can also earn reputation. A larger lead at the end of the race yields more reputation. 
