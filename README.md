@@ -30,7 +30,7 @@ As we can see, there are four rows: one where the name of the player (Ewil) is d
 The five images of one row together contain all the necessary information regarding the respective opponent. The image in the center and the one on its left-hand side yield the lead in seconds. Depending on the size of the gap, the more left one of these two images may also display a positive or negative sign. Leads are denoted by a plus sign, while minus signs are used if the player is behind an opponent. For large leads, a plus sign may be found in the left most image of all five images. To give more accurate rewards, we will also include the two images on the right. They specify the lead on a sub-second level. They will be more relevant in later stages of the training if the player competes against enemies on higher difficulties.
 
 ## Installation / Usage
-Download the files images_boxes.zip and labels_one_list_314.data, containing the images and corresponding labels. They will be used in order to determine the rewards. An example on how to perform image recognition [can be found here] (https://www.youtube.com/watch?v=Gj0iyo265bc). We will employ similar methods.
+Download the files containing the [images](./images_boxes.zip) and [respective labels](./labels_one_list_314.data). They will be used in order to determine the rewards. An example on how to perform image recognition [can be found here] (https://www.youtube.com/watch?v=Gj0iyo265bc). We will employ similar methods.
 
 ## Credits
 
