@@ -7,11 +7,6 @@ This document is meant to be some where between a documentation and a written jo
 
 ## Table of Contents:
 
-#### Description
-#### Introduction
-#### Installation / Usage
-#### Credits
-
 
 ## Introduction
 Need For Speed Underground 2 is a racing game, made by EA and published in 2004 in which the player mainly competes in races against other racers. To win a race and receive the prize money, the protagonist has to become first in each race. In the career mode on which we will focus, a player can also earn reputation. A larger lead at the end of the race yields more reputation. 
