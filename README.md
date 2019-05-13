@@ -1,14 +1,20 @@
 # nfsu2-ai
 
-## Description
+## Table of contents
+
+1. [ Description ](#description)
+2. [ Introduction ](#introduction)
+3. [ Installation / usage ](#installation)
+4. [ Credits ](#credits)
+
+<a name="description"></a>
+## 1. Description
 The goal of this project is to let a program drive cars and win races in the racing game Need for Speed: Underground 2. In order to achieve this task, we will use reinforcment learning in combination with neural network(s). This project is inspired by the [work of the DeepMind team using the raw pixels to train a deep neural network to play Atari games](http://arxiv.org/pdf/1312.5602v1.pdf). In addition, at least the steering and the retrieval of the pixels will be done in a similar fashion as it was done by the YouTuber [sentdex](https://www.youtube.com/user/sentdex) (see also [here](https://pythonprogramming.net/next-steps-python-plays-gta-v/)).
 
 This document is meant to be some where between a documentation and a written journal that informs on the thought processes behind certain decisions.
 
-## Table of Contents:
-
-
-## Introduction
+<a name="introduction"></a>
+## 2. Introduction
 Need For Speed Underground 2 is a racing game, made by EA and published in 2004 in which the player mainly competes in races against other racers. To win a race and receive the prize money, the protagonist has to become first in each race. In the career mode on which we will focus, a player can also earn reputation. A larger lead at the end of the race yields more reputation. 
 
 Initial idea of the project: Create an AI for Need For Speed Underground 2 that is able to beat the ingame AI opponents on easiest difficulty in one race in the modes 'Circuit', 'Sprint', 'Street X' and / or 'Underground Racing Leauge' ('URL').
@@ -24,9 +30,11 @@ As we can see, there are four rows: one where the name of the player (Ewil) is d
 
 The five images of one row together contain all the necessary information regarding the respective opponent. The image in the center and the one on its left-hand side yield the lead in seconds. Depending on the size of the gap, the more left one of these two images may also display a positive or negative sign. Leads are denoted by a plus sign, while minus signs are used if the player is behind an opponent. For large leads, a plus sign may be found in the left most image of all five images. To give more accurate rewards, we will also include the two images on the right. They specify the lead on a sub-second level. They will be more relevant in later stages of the training if the player competes against enemies on higher difficulties.
 
-## Installation / Usage
+<a name="installation"></a>
+## 3. Installation / Usage
 Download the files containing the [images](./images_boxes.zip) and [respective labels](./labels_one_list_314.data). They will be used in order to determine the rewards. An example on how to perform image recognition [can be found here](https://www.youtube.com/watch?v=Gj0iyo265bc). We will employ similar methods in order to obtain the leads.
 
-## Credits
+<a name="credits"></a>
+## 4. Credits
 
 The creation of the images and the labeling of the images has been done by Timo Lohrmann.
