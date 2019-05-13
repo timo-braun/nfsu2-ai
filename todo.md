@@ -1,13 +1,12 @@
 # todo list
 
 ## issues:
-- [ ] loading data into tensorflow
-- [ ] \(optional) split data set into training and test
+- [x] loading data into tensorflow
+- [x] \(optional) split data set into training and test
 - [ ] add more races to data set
-- [ ] 
 
 ## loading data into tensorflow:
-- [ ] convert images into (grey scale) arrays
+- [x] convert images into (grey scale) arrays
 - [ ] include weights to balance different number of images per class
-- [ ] add labels to images in tf
-- [ ] load both for training
+- [x] add labels to images in tf
+- [x] load both for training
