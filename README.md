@@ -28,7 +28,9 @@ The very first goal is to obtain information about the distance (lead) with rega
 
 ![alt text](./frame_race_314.png "A frame from a Street X race. We focus on the red bordered table in the top right corner")
 
-As we can see, there are four rows: one where the name of the player (Ewil) is displayed and three with the leads over the opponents. The three rows are the ones where we get our information from. Thus, they are the ones that will be inserted into the initial neural network. To reduce the number of classes that arise, we separate each row further. As a consequence, we will further cut out five images of each row (see [here](./table_314.png)).
+As we can see, there are four rows: one where the name of the player (Ewil) is displayed and three with the leads over the opponents. The three rows are the ones where we get our information from. Thus, they are the ones that will be inserted into the initial neural network. To reduce the number of classes that arise, we separate each row further. As a consequence, we will further cut out five images of each row:
+
+![alt text](./table_314.png "The table with the leads. The cuts are demonstrated in the first row.")
 
 The five images of one row together contain all the necessary information regarding the respective opponent. The image in the center and the one on its left-hand side yield the lead in seconds. Depending on the size of the gap, the more left one of these two images may also display a positive or negative sign. Leads are denoted by a plus sign, while minus signs are used if the player is behind an opponent. For large leads, a plus sign may be found in the left most image of all five images. To give more accurate rewards, we will also include the two images on the right. They specify the lead on a sub-second level. They will be more relevant in later stages of the training if the player competes against enemies on higher difficulties.
 
