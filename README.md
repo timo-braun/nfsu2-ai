@@ -37,10 +37,7 @@ The five boxes of one row together contain all the necessary information regardi
 <a name="installation"></a>
 ## 3. Installation / Usage
 In this section, we give a short explanation on the steps necessary to obtain a classifier for the boxes using a previously [created data set](./training_data_314.data). There will be a dedicated section in the wiki on the creation of the data set(s).  
-Simply put, we only need to execute the file [TrainClassifierLeads.py](./TrainClassifierLeads.py). It will fetch the data set from C:\ML\nfsu2_data\data\training_data_314.data, train a simple neural network and save the network in C:\ML\nfsu2_data\models\reward_classifier_epochs_3.h5 (the '3' in the name indicates the number of epochs). It has an accuracy of approximately 98\% which is most likely caused by the homogeneity of the data. 
-
-
-[Download the files containing the [images](./images_boxes.zip) and [respective labels](./labels_one_list_314.data). They will be used in order to determine the rewards. An example on how to perform image recognition [can be found here](https://www.youtube.com/watch?v=Gj0iyo265bc). We will employ similar methods in order to obtain the leads.
+Simply put, we only need to execute the file [TrainClassifierLeads.py](./TrainClassifierLeads.py). It will fetch the data set from ``` C:\ML\nfsu2_data\data\training_data_314.data ```, train a simple neural network and save it as ``` C:\ML\nfsu2_data\models\reward_classifier_epochs_3.h5``` (the '3' in the name indicates the number of epochs used for training). It has an accuracy of approximately 98\% (which is most likely caused by the homogeneity of the data).  
 
 <a name="credits"></a>
 ## 4. Credits
