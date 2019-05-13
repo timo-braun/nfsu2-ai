@@ -36,7 +36,7 @@ The five boxes of one row together contain all the necessary information regardi
 
 <a name="installation"></a>
 ## 3. Installation / Usage
-In this section, we give a short explanation on the steps necessary to obtain a classifier for the boxes using a previously [created data set](./training_data_314.data). Simply put, we only need to execute the file [TrainClassifierLeads.py](./TrainClassifierLeads.py). It will fetch the data set from ``` C:\ML\nfsu2_data\data\training_data_314.data ```, train a simple neural network and save it as ``` C:\ML\nfsu2_data\models\reward_classifier_epochs_3.h5``` (the '3' in the name indicates the number of epochs used for training). It has an accuracy of approximately 98\% (which is most likely caused by the homogeneity of the data).  
+In this section, we give a short explanation on the steps necessary to obtain a classifier for the boxes using a previously [created data set](./training_data_314.data). Simply put, we only need to execute the file [TrainClassifierLeads.py](./TrainClassifierLeads.py). It will fetch the data set from ` C:\ML\nfsu2_data\data\training_data_314.data`, train a simple neural network and save it as `C:\ML\nfsu2_data\models\reward_classifier_epochs_3.h5` (the '3' in the name indicates the number of epochs used for training). It has an accuracy of approximately 98\% (which is most likely caused by the homogeneity of the data).  
 As a next step, the obtained classifier will be implemented to extract the leads during the game.
 
 <a name="credits"></a>
