@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
+import time
 
 #set up race name(s)
 race_name = '314'
@@ -50,7 +51,8 @@ def display(i):
 
 #do the training
 model = keras.Sequential([
-    keras.layers.Flatten(input_shape = (height*width,)),
+    keras.layers.Dense(height*width, input_shape=(height*width,)),
+    ##keras.layers.Flatten(input_shape = (height*width,)),
     keras.layers.Dense(128, activation=tf.nn.relu),
     keras.layers.Dense(len(classes), activation=tf.nn.softmax)
 ])
@@ -59,20 +61,24 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-num_epochs = 3
+num_epochs = 5
 model.fit(X_train, y_train, epochs = num_epochs)
-
-#save the model
-model.save('C:\\ML\\nfsu2_data\\models\\reward_classifier_epochs_' + str(num_epochs) + '.h5')
 
 #evaluate the model
 test_loss, test_acc = model.evaluate(X_test, y_test)
 
 print('Test accuracy:', test_acc)
 
+#model.save('my_model.h5')
+model.save('C:\\ML\\nfsu2_data\\models\\reward_classifier_epochs_' + str(num_epochs) + '.h5')
+print('Saved model at C:\\ML\\nfsu2_data\\models\\reward_classifier_epochs_' + str(num_epochs) + '.h5')
+
 ##predictions = model.predict(X_test)
 
+del model
 
+#model = load_model('my_model.h5')
+model = load_model('C:\\ML\\nfsu2_data\\models\\reward_classifier_epochs_' + str(num_epochs) + '.h5')
 
 
 
