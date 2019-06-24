@@ -18,7 +18,7 @@ model = load_model('C:\\ML\\nfsu2_data\\models\\reward_classifier_epochs_' + str
 
 
 #during testing, wait for 10 sec so that the screen is set up properly
-start_in_sec = 1
+start_in_sec = 10
 print('Open window with nfsu2 now! You have {} seconds'.format(start_in_sec))
 time.sleep(start_in_sec)
 #input()
@@ -109,5 +109,3 @@ def screen_record():
         if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
             break
-
-
